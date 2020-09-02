@@ -32,7 +32,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/blog_posts', {
 mongoose.connection.on('connected', () => {
     console.log('Mongoose is connected')
 })
-
 //create some data for the mongo db ***This was all used for development 
 //and testing of connections but is no longer needed now that this is 
 //connected to an actual DB so commenting out through line 53.
