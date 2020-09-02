@@ -21,7 +21,7 @@ const routes = require('./routes/api')
 //use mongoose.connect method to connect to mongoose.  **First param was originally
 //built as MONGODB_URI but that variable was commented out as part of switching
 //from Atlas to local MongoDB
-mongoose.connect('mongodb://localhost/blog_posts', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/blog_posts', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
