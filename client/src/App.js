@@ -43,7 +43,7 @@ export default function App() {
       title: completeBlogPost.title,
       body: completeBlogPost.body
     }
-  
+  }
   function clearInputs() {
     setCompleteBlogPost({
       title: '',
@@ -75,7 +75,7 @@ export default function App() {
     .catch((err) => {
       console.log('Internal Server Error')
     })
-  }
+  
 //function to display posts that takes posts as a param and returns null if 
 //posts array is empty.  If it's not empty, then loop through the posts
 
